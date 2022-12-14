@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cal_dic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cal_dic">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="17dp"
+        android:gravity="right"
+        android:text="Healthy-Fit"
+        android:textColor="#465AB4"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        android:textColor="#465AB4"
+        android:textStyle="bold"
+        android:text="▥  칼로리 백과사전"/>
+
+    <ListView
+        android:id="@+id/cal_listview"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="432dp">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#465AB4"
+            app:itemIconTint="#FFFFFF"
+            app:itemTextColor="#ffffff"
+            app:menu="@menu/bottom_menu" />
+    </LinearLayout>
+</LinearLayout>

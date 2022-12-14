@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthyfit">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <!--수정ㅇㅇ-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignupActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".frag"/>
+        <activity android:name=".home"/>
+        <activity android:name=".liv0"/>
+        <activity android:name=".liv"/>
+        <activity android:name=".liv2"/>
+        <activity android:name=".liv3"/>
+        <activity android:name=".detail_list0"/>
+        <activity android:name=".detail_list"/>
+        <activity android:name=".detail_list2"/>
+        <activity android:name=".detail_list3"/>
+        <activity android:name=".exAdapter"/>
+        <activity android:name=".exItem"/>
+        <activity android:name=".mypage"/>
+        <activity android:name=".checklist"/>
+        <activity android:name=".cal_dic"/>
+        <activity android:name=".play_api0"/>
+        <activity android:name=".play_api"/>
+        <activity android:name=".play_api2"/>
+        <activity android:name=".play_api3"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<!--    <uses-permission android:name="android.permission.READ_CALENDAR"/>-->
+<!--    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>-->
+</manifest>

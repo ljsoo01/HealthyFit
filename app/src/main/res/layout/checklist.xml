@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/checklist">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:paddingTop="17dp"
+        android:gravity="right"
+        android:text="Healthy-Fit"
+        android:textColor="#465AB4"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        tools:ignore="MissingConstraints" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+
+    <EditText
+        android:id="@+id/contextEditText"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:textSize="15dp"
+        android:lineSpacingExtra="10sp"
+        android:hint="내용을 입력하세요."
+        android:inputType="textMultiLine"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/contextEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/contextEditText"
+        app:layout_constraintTop_toTopOf="@+id/contextEditText" />
+
+
+
+
+
+
+    <Button
+        android:id="@+id/plus_Btn"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_margin="5dp"
+        android:text="+ 일정 추가"
+        android:background="#ffffff"
+        android:visibility="invisible"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+
+
+    <Button
+        android:id="@+id/cha_Btn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn2"
+        android:text="수정"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:backgroundTint="#465AB4"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+
+    <Button
+        android:id="@+id/ok_Btn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn2"
+        android:text="확인"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:backgroundTint="#465AB4"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+
+    <Button
+        android:id="@+id/del_Btn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn2"
+        android:text="삭제"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:backgroundTint="#465AB4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cha_Btn"
+        app:layout_constraintEnd_toEndOf="@+id/plus_Btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#465AB4"
+            app:itemIconTint="#FFFFFF"
+            app:itemTextColor="#ffffff"
+            app:menu="@menu/bottom_menu" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
