@@ -19,8 +19,7 @@ public class play_api3 extends YouTubeBaseActivity {
     YouTubePlayerView playerView;
     YouTubePlayer player;
 
-    //gMaB-fG4u4g
-    private  static String API_KEY = "AIzaSyDSPThjOYw6KV5a2-GIEPgNNT4wF7nelbM";
+    private  static String API_KEY = "본인의 API";
     private  static String videoId = "";
 
     private  static final String TAG = "player";
