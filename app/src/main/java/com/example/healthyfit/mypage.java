@@ -49,10 +49,6 @@ public class mypage extends AppCompatActivity {
         String userBMI = intent.getStringExtra("userBMI");
         String userETC = intent.getStringExtra("userETC");
 
-        /*Bundle bundle = intent.getExtras();//extra들을 가져온다고? 뭔소리야 일단 ㅇㅋ
-        String name = bundle.getString("userEmail");
-        String pw = bundle.getString("userPw")*/
-
         name_get.setText(userEmail);
         pw_get.setText(userPw);
 
