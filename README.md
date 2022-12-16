@@ -1,6 +1,16 @@
-# HealthyFit
+# Healthy-Fit
 
-health training application with Android Studio
+홈트 어플리케이션
+<br><br>
+
+
+팀 소개
+-------
+이지수(나) - 백엔드 개발(DB 및 서버 개발)    
+이혜린 - 프론트엔드 개발 보조    
+김태연 - 프론트엔드 개발(사용자 인터페이스 위주)    
+박미주 - 백엔드 개발(DB 및 서버 개발)
+<br><br>
 
 
 프로젝트 소개
@@ -19,6 +29,8 @@ health training application with Android Studio
 <img src="https://user-images.githubusercontent.com/119147248/207879351-3e411225-76f5-4a99-9a4b-d1eae0a3c924.jpg" width="20%" height="10%" title="px(픽셀) 크기 설정" alt="exlist"></img>
 <img src="https://user-images.githubusercontent.com/119147248/207879400-38d2e08c-6bf6-40b1-8aaa-5705905ab3c2.jpg" width="20%" height="10%" title="px(픽셀) 크기 설정" alt="callist"></img>
 </div>
+<br>
+
 
 내 역할
 -------
@@ -29,11 +41,13 @@ health training application with Android Studio
 - 회원 정보 수정
 - 체크 리스트 연동
 - 메인 페이지에서 회원수정 정보 고정
+<br>
+
 
 사용한 언어 및 프로그램
 ------------------
 <div>
-	<img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white" />
   <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=PHP&logoColor=white" />
   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white" />
